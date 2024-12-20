@@ -51,11 +51,11 @@ body {
   background-color: var(--bg-hover-color);
 }
 
-#theme-button[data-theme="light"] #moon-icon {
+.light #theme-button #moon-icon {
   display: none;
 }
 
-#theme-button[data-theme="dark"] #sun-icon {
+.dark #theme-button #sun-icon {
   display: none;
 }
 
