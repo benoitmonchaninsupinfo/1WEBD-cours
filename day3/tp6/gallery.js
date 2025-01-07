@@ -43,15 +43,31 @@ const gallery = document.getElementById("gallery");
 //   )
 //   .join("");
 
-gallery.innerHTML = new Array(10)
-  .fill(null)
-  .map((_, index) => createImage(index))
-  .join("");
+function addImage() {
+  const imagesCount = gallery.querySelectorAll(".image").length;
 
-function createImage(index) {
-  return `
-    <div class="image">
-      <img src="https://picsum.photos/id/${index * 10}/200/300" alt />
-    </div>
+  const imgContainer = document.createElement("div");
+  imgContainer.classList.add("image");
+  imgContainer.innerHTML = `
+    <img src="https://picsum.photos/id/${
+      (imagesCount * 10) % 1000
+    }/200/300" alt />
   `;
+  gallery.appendChild(imgContainer);
 }
+
+function addImages(count) {
+  new Array(count).fill(null).forEach(() => addImage());
+
+  // for (let i = 0; i < count; i++) {
+  //   addImage();
+  // }
+}
+
+addImages(10);
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+    addImages(10);
+  }
+});

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP 9 : Lib</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>TP 6 : Lib</h1>
+
+    <h2>2. Lodash</h2>
+    <div id="filters">
+      <input type="search" id="search" placeholder="Rechercher" />
+      <div class="form-field">
+        <label for="category">Catégorie :</label>
+        <select name="category" id="category">
+          <option selected value="">Toutes</option>
+          <option value="Web">Web</option>
+          <option value="Mobile">Mobile</option>
+          <option value="Desktop">Desktop</option>
+        </select>
+      </div>
+    </div>
+
+    <table id="projects">
+      <thead>
+        <tr>
+          <th>
+            Titre
+            <button id="sort-title">
+              <img src="icons/arrow-down-up.svg" alt="" />
+            </button>
+          </th>
+          <th>
+            Catégorie
+            <button id="sort-category">
+              <img src="icons/arrow-down-up.svg" alt="" />
+            </button>
+          </th>
+          <th>
+            Date de fin
+            <button id="sort-end-date">
+              <img src="icons/arrow-down-up.svg" alt="" />
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>3. Axios</h2>
+
+    <div id="comments"></div>
+
+    <script src="lodash.js"></script>
+    <script src="axios.js"></script>
+  </body>
+</html>
