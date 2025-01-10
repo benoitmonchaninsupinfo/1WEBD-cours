@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP 10 : Modules</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  </head>
+  <body>
+    <h1>TP 10 : Modules</h1>
+
+    <div id="filters">
+      <input type="search" id="search" placeholder="Rechercher" />
+      <div class="form-field">
+        <label for="category">Catégorie :</label>
+        <select name="category" id="category">
+          <option selected value="">Toutes</option>
+          <option value="Web">Web</option>
+          <option value="Mobile">Mobile</option>
+          <option value="Desktop">Desktop</option>
+        </select>
+      </div>
+    </div>
+
+    <table id="projects">
+      <thead>
+        <tr>
+          <th>
+            Titre
+            <button id="sort-title">
+              <img src="icons/arrow-down-up.svg" alt="" />
+            </button>
+          </th>
+          <th>
+            Catégorie
+            <button id="sort-category">
+              <img src="icons/arrow-down-up.svg" alt="" />
+            </button>
+          </th>
+          <th>
+            Date de fin
+            <button id="sort-end-date">
+              <img src="icons/arrow-down-up.svg" alt="" />
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

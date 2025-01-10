@@ -1,0 +1,67 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#projects th button {
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+#projects th button:hover {
+  background-color: #aaa;
+}
+
+#projects th button img {
+  width: 20px;
+  height: 20px;
+}
+
+#filters {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+#comments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+#comments > div {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+
+#comments .author {
+  font-size: 0.75em;
+  grid-row: 2;
+}

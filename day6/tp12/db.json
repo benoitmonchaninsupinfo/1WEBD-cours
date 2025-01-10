@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Faire les courses",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Faire les devoirs",
+      "completed": false
+    }
+  ]
+}
